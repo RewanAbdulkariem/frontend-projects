@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+body{
+    background: #1f2029;
+    color:#c4c3ca;
+    font-family: Poppins;
+    font-size: 16px;
+}
+.container {
+    width: 100vw;
+    max-width: 600px;
+    margin: 10rem auto;
+    padding: 20px;
+    border: 1px solid #3e445a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #2c2f3f;
+    color: #c4c3ca;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+label {
+    font-weight: bold;
+}
+input:not([type="radio"]), select, textarea{
+    color: #c4c3ca;
+    background-color: #1f2029;
+    min-height: 2.5em;
+
+}
+input:focus,
+textarea:focus {
+    border-color: dodgerblue; 
+    outline: none;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+button
+{
+    margin-top:1rem ;
+    border-radius: 4px;
+    height: 44px;
+    background-color: #ffeba7;
+    color: #102770;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #102770;
+    border: rgba(16,39,112,.2) 1px solid;
+    color: #ffeba7;
+}
+.radio-group input[type="radio"]:checked{
+    border-color: red;
+    background-color: red;
+    box-shadow: 0 0 5px red;
+}
+input[type="radio"]:checked + label {
+  color: green;
+}
+input:first-of-type {
+    border-radius: 5px;
+}

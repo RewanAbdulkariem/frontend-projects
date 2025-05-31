@@ -1,0 +1,45 @@
+#main {
+  background: #eee;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#title, #description,  #img-caption{
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+}
+
+#img-div {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+#image {
+    display: block;
+    margin:auto;
+    max-width: 100%;
+    height: auto;
+}
+#tribute-info
+{
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+#tribute-info-p, #more_info
+{
+  font-family: sans-serif;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+#tribute-info li
+{
+
+  color: #333;
+  margin-bottom: 25px;
+
+}
