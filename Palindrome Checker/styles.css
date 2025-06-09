@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "hetilica";
+    src: url("fonts/hetilica.ttf") format("truetype");
+}
+@font-face {
+    font-family: Amaranth;
+    src: url("fonts/Amaranth-Regular.otf") format("opentype");
+}
+body {
+    font-family: "Amaranth", sans-serif;
+    background: #E9DDF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    min-width: 90vw;
+}
+h1 {
+    font-family: "hetilica", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    width:50%;
+    max-width: 90%;
+}
+#game-container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
+    max-width: 500px;
+}
+#game-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+}
+label{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+#text-input{
+    border: none;
+    border-bottom: 2px solid #853A69;
+    background: transparent;
+    font-size: 1rem;
+}
+#text-input:focus {
+  outline: none;
+  border-color: #A45B8C;
+}
+#check-btn{
+    background: #853A69;
+    color: #E9DDF2;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+#check-btn:hover{
+    background: #A45B8C;
+}
+#result{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #853A69;
+}
+#description{
+    width: 70%;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
